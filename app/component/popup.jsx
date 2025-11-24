@@ -1,5 +1,4 @@
 import "../static/css/popup.css";
-import "../static/js/popup.js";
 
 import { useRef, useEffect, useState } from "react";
 

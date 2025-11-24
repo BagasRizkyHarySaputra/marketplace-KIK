@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { supabase } from "../services/supabaseClient";
 import "../static/css/payment.css";
-import "../static/js/payment.js";
 
 export default function Payment({ onCartClick, onClose, counter, setCounter }) {
 	const [showQrPopup, setShowQrPopup] = useState(false);

@@ -6,7 +6,6 @@ import Header from "./component/header";
 import Popup from "./component/popup";
 import Payment from "./component/payment";
 import "./static/css/page.css";
-import "./static/js/page.js";
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);

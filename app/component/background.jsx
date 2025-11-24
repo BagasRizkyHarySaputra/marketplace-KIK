@@ -1,5 +1,4 @@
 import "../static/css/background.css";
-import "../static/js/background.js";
 
 export default function Background() {
 	return (
