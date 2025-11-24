@@ -1,0 +1,46 @@
+@import url('./fonts.css');
+/* Header container */
+.header {
+	width: 100vw;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	position: fixed;
+	top: 2vh;
+	left: 0;
+	z-index: 100;
+	pointer-events: auto;
+}
+
+/* Logo di kiri */
+.header-logo {
+	height:84px;
+	width: auto;
+}
+
+.header-left {
+	display: flex;
+	align-items: center;
+    padding-left: 4.2vh;
+}
+
+/* Menu di kanan */
+.header-right {
+	display: flex;
+	align-items: center;
+	gap: 55px;
+    padding-right: 20vh;
+    
+}
+.header-link {
+	font-size: 1.700rem;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+.header-link:hover {
+	color: #787058;
+}

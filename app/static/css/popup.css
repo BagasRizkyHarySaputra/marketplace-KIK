@@ -1,0 +1,128 @@
+@import url('./fonts.css');
+@keyframes popup-in {
+  0% {
+    opacity: 0;
+    transform: translate(120px, 120px) scale(0.2);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+/* end .popup-cart-qty */
+
+@keyframes popup-out {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(120px, 120px) scale(0.2);
+  }
+}
+/* end .popup-pay-text */
+
+.popup-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-animate-in {
+  animation: popup-in 0.4s cubic-bezier(0.4,0.8,0.2,1) forwards;
+}
+.popup-animate-out {
+  animation: popup-out 0.3s cubic-bezier(0.4,0.8,0.2,1) forwards;
+}
+
+.popup-top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.popup-box-left {
+  width: 220px;
+  height: 120px;
+  background: #e2d3c0;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 18px 18px 18px 22px;
+  position: relative;
+}
+
+.popup-cart-title {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.popup-cart-qty {
+  position: absolute;
+  right: 20px;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.popup-box-right {
+  width: 80px;
+  height: 120px;
+  background: #7e775f;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-cart-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.popup-btn {
+  width: 340px;
+  height: 60px;
+  background: #7e775f;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.popup-pay-text {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}

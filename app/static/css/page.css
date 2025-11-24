@@ -1,0 +1,93 @@
+@import url('./fonts.css');
+
+/* Prevent scroll on page */
+body, html {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
+.main-ingredients li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.main-ingredients .circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 12px;
+}
+/* Main content box (putih, border, radius) */
+.main-content {
+  top: 17vh;
+  left: 50vh;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 20;
+}
+
+.main-title {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.main-ingredients {
+  font-family: 'Glacial Indifference', sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0rem;
+}
+.main-ingredients ul {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+.main-ingredients li {
+  margin-bottom: 0.3rem;
+}
+
+.main-desc {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.main-buy {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main-buy-btn {
+  background: #e5d3b3;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.3s;
+}
+.main-buy-btn:hover {
+  background: #ffffff;
+  color: #c0a279;
+}
+.main-buy-cart {
+  display: flex;
+  align-items: center;
+}

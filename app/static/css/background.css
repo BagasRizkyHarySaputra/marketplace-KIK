@@ -1,0 +1,50 @@
+@import url('./fonts.css');
+body {
+  background: #c0a279 !important;
+}
+/* Layer 1: Background color */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #c0a279 !important;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Layer 2: White transparent box with border */
+.background-box {
+  position: absolute;
+  top: 9.8%;
+  left: 10%;
+  width: 84vw;
+  height: 78vh;
+  background: rgba(0, 0, 0, 0);
+  border: 5px solid #ffffff;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+/* Layer 3: Sidebar */
+.background-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 2;
+  box-shadow: 50px 0 77px 0 rgba(0,0,0,0.5);
+}
+
+/* Layer 4: SopBuah SVG */
+.background-image {
+  position: absolute;
+  left: 3vw;
+  top: 14.5vh;
+  width: 600px;
+  height: auto;
+  z-index: 3;
+}
