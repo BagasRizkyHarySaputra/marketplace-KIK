@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <>
-      <Background />
+      <Background hideImage={showPaymentPopup || !showMainContent} />
       <Header />
       {showMainContent && (
         <div className="main-content">
@@ -48,12 +48,11 @@ export default function Home() {
           <div className="main-ingredients">
             <span>Ingredients:</span>
             <ul>
-              <li><span className="circle"></span>Cabe Ijo</li>
-              <li><span className="circle"></span>Cabe Merah</li>
-              <li><span className="circle"></span>Kunyit Asem</li>
-              <li><span className="circle"></span>Lombok Setan</li>
-              <li><span className="circle"></span>Mang Barok</li>
-              <li><span className="circle"></span>Mang erik</li>
+              <li><span className="circle"></span>Mangga</li>
+              <li><span className="circle"></span>Mutiara</li>
+              <li><span className="circle"></span>Melon</li>
+              <li><span className="circle"></span>Jelly</li>
+              <li><span className="circle"></span>Buah Naga</li>
             </ul>
           </div>
           <p className="main-desc">

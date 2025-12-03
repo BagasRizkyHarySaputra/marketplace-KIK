@@ -25,11 +25,11 @@
 }
 .qr-popup-box {
 	background: #fff;
-	border-radius: 30px;
-	padding: 32px 24px;
-	box-shadow: 0 4px 32px rgba(0,0,0,0.15);
+	border-radius: 4vh;
+	padding: 4vh 3vw;
+	box-shadow: 0 0.5vh 3vh rgba(0,0,0,0.15);
 	position: relative;
-	min-width: 320px;
+	min-width: 30vw;
 	max-width: 90vw;
 	display: flex;
 	flex-direction: column;
@@ -37,182 +37,56 @@
 }
 .qr-popup-close {
 	position: absolute;
-	top: 16px;
-	right: 16px;
-	font-size: 28px;
+	top: 2vh;
+	right: 2vw;
+	font-size: 4vh;
 	background: none;
 	border: none;
 	cursor: pointer;
 }
 .qr-popup-download-row {
 	background: #c0a279;
-	border-radius: 30px;
-	padding: 10px 24px;
+	border-radius: 4vh;
+	padding: 1.5vh 3vw;
 	display: flex;
 	align-items: center;
-	margin-bottom: 24px;
+	margin-bottom: 3vh;
 }
 .qr-popup-download-icon {
-	margin-right: 10px;
+	margin-right: 2vw;
 }
 .qr-popup-download-label {
 	color: #fff;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 2.5vh;
 }
 .qr-popup-qr-img {
-	width: 240px;
-	height: 240px;
-	margin-bottom: 24px;
-	border-radius: 16px;
-	box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+	width: 24vh;
+	height: 24vh;
+	margin-bottom: 3vh;
+	border-radius: 2vh;
+	box-shadow: 0 0.2vh 1.2vh rgba(0,0,0,0.08);
 }
 .qr-popup-total-harga {
-	font-size: 28px;
+	font-size: 4vh;
 	font-weight: 700;
-	margin-bottom: 16px;
+	margin-bottom: 2vh;
 	color: #000000;
 }
 .qr-popup-download-btn {
 	background: #c0a279;
 	color: #fff;
 	border: none;
-	border-radius: 20px;
-	padding: 12px 32px;
-	font-size: 18px;
+	border-radius: 2vh;
+	padding: 2vh 6vw;
+	font-size: 2.5vh;
 	font-weight: 600;
 	cursor: pointer;
-	margin-top: 8px;
+	margin-top: 1vh;
 }
-/* QR Popup Styles */
-.qr-popup-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background: rgba(0,0,0,0.5);
-	z-index: 9999;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.qr-popup-box {
-	background: #fff;
-	border-radius: 30px;
-	padding: 32px 24px;
-	box-shadow: 0 4px 32px rgba(0,0,0,0.15);
-	position: relative;
-	min-width: 320px;
-	max-width: 90vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-/* Total harga di bawah QR */
-.payment-total-harga {
-	font-family: 'League Spartan', 'Arial', sans-serif;
-	font-size: 2.1rem;
-	color: #fff;
-	font-weight: bold;
-	margin-top: 8px;
-	letter-spacing: 1px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-/* Payment input layout */
-.payment-form-inputs {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	margin-bottom: 24px;
-}
-
-.payment-input-group {
-	display: flex;
-	flex-direction: column;
-	gap: 6px;
-}
-
-.payment-input-label {
-	font-family: 'Glacial Indifference', 'Arial', sans-serif;
-	font-size: 1.1rem;
-	color: #fff;
-	font-weight: 500;
-	margin-bottom: 2px;
-}
-
-.payment-input-row {
-	display: flex;
-	flex-direction: row;
-	gap: 18px;
-}
-
-.payment-input {
-	background: #fff;
-	border: none;
-	border-radius: 20px;
-	font-size: 1.2rem;
-	padding: 12px 24px;
-	color: #7e775f;
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	outline: none;
-	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-}
-
-.payment-counter-group {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	gap: 2px;
-}
-
-.payment-counter-box {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	background: #fff;
-	border-radius: 20px;
-	padding: 12px 18px;
-	gap: 12px;
-}
-
-.payment-counter-btn {
-	background: none;
-	border: none;
-	font-size: 2rem;
-	color: #222;
-	font-weight: bold;
-	cursor: pointer;
-	width: 32px;
-	height: 32px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.payment-counter-value {
-	font-size: 1.3rem;
-	color: #222;
-	font-family: 'Montserrat', 'Arial', sans-serif;
-	font-weight: bold;
-	min-width: 32px;
-	max-width: 40px;
-	text-align: center;
-	border: none;
-	background: transparent;
-}
-
 
 /* Payment Form Layout */
-/* Payment replaces main-content, not popup */
-/* Payment layout mirip main-content */
 .payment-form-container {
-    padding-left: 60vh;
 	width: 100vw;
 	min-height: 100vh;
 	display: flex;
@@ -220,6 +94,7 @@
 	justify-content: center;
 	background: transparent;
 	position: relative;
+	padding: 0;
 }
 
 .payment-form-box {
@@ -228,175 +103,212 @@
 	box-shadow: none;
 	padding: 0;
 	min-width: 0;
-	max-width: none;
-	width: 600px;
+	max-width: 50vw;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	position: static;
-	margin-left: 60px;
-	margin-top: 32px;
+	margin: 0 auto;
 }
 
-/* Header di kanan atas box */
 .payment-form-header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 18px;
+	margin-bottom: 3vh;
 }
 
-/* Judul besar di atas */
 .payment-title {
 	font-family: 'League Spartan', 'Arial', sans-serif;
-	font-size: 2.5rem;
+	font-size: 3.5vh;
 	font-weight: bold;
 	color: #fff;
 	letter-spacing: 1px;
 }
 
-/* Tombol close di kanan atas */
 .payment-close {
 	background: #fff;
 	border: none;
-	border-radius: 8px;
-	font-size: 2rem;
+	border-radius: 1vh;
+	font-size: 4vh;
 	color: #7e775f;
-	width: 40px;
-	height: 40px;
+	width: 6vh;
+	height: 6vh;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-/* Input di bawah judul */
 .payment-form-inputs {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
-	margin-bottom: 24px;
+	gap: 2vh;
+	margin-bottom: 3vh;
 }
 
-/* Input style bulat */
+.payment-input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+}
+
+.payment-input-label {
+	font-family: 'Glacial Indifference', 'Arial', sans-serif;
+	font-size: 2.5vh;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 0.5vh;
+}
+
+.payment-input-row {
+	display: flex;
+	flex-direction: row;
+	gap: 2vw;
+}
+
 .payment-input {
 	background: #fff;
 	border: none;
-	border-radius: 20px;
-	font-size: 1.2rem;
-	padding: 12px 24px;
+	border-radius: 2vh;
+	font-size: 2vh;
+	padding: 1.5vh 2vw;
 	color: #7e775f;
-	font-family: 'Glacial Indifference', 'Arial', sans-serif;
+	font-family: 'Montserrat', 'Arial', sans-serif;
 	outline: none;
-	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+	box-shadow: 0 0.2vh 0.4vh rgba(0,0,0,0.04);
 }
 
-.input-buttom {
+.payment-counter-group {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.5vh;
+}
+
+.payment-counter-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	background: #fff;
+	border-radius: 2vh;
+	padding: 2vh 3vw;
+	gap: 2vw;
+}
+
+.payment-counter-btn {
+	background: none;
 	border: none;
-	border-radius: 20px;
-	font-size: 1.2rem;
-	padding: 12px 24px;
-	color: #7e775f;
-	font-family: 'Glacial Indifference', 'Arial', sans-serif;
-	outline: none;
-	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+	font-size: 4vh;
+	color: #222;
+	font-weight: bold;
+	cursor: pointer;
+	width: 5vh;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-/* Bagian bawah form */
+.payment-counter-value {
+	font-size: 2.5vh;
+	color: #222;
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	font-weight: bold;
+	min-width: 5vh;
+	max-width: 7vh;
+	text-align: center;
+	border: none;
+	background: transparent;
+}
+
 .payment-form-bottom {
-	margin-top: 18px;
+	margin-top: 3vh;
 }
 
-/* PayHere SVG dan QR sejajar horizontal */
 .payment-payhere-row {
 	display: flex;
 	align-items: center;
-	gap: 24px;
-	margin-bottom: 18px;
+	gap: 3vw;
+	margin-bottom: 3vh;
 }
 
-/* SVG PayHere besar */
 .payment-arrow-svg {
-	width: 600px;
+	width: 25vw;
 	height: auto;
 }
 
-/* QR code style */
 .payment-qr-svg {
-	width: 110px;
+	width: 10vh;
 	height: auto;
-	padding: 8px;
+	padding: 0.5vh;
 }
 
-/* Tombol Pay Now dan cart sejajar horizontal */
 .payment-btn-row {
 	display: flex;
 	align-items: center;
-	gap: 18px;
-	margin-top: 8px;
+	gap: 2vw;
+	margin-top: 1vh;
 }
 
-/* Tombol Pay Now besar bulat */
 .payment-pay-btn {
 	background: #e2d3c0;
 	color: #7e775f;
 	font-family: 'Montserrat', 'Arial', sans-serif;
-	font-size: 1.5rem;
+	font-size: 2vh;
 	font-weight: bold;
 	border: none;
-	border-radius: 20px;
-	padding: 12px 48px;
+	border-radius: 2vh;
+	padding: 1.5vh 4vw;
 	cursor: pointer;
-	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+	box-shadow: 0 0.2vh 0.4vh rgba(0,0,0,0.04);
 	transition: background 0.2s;
 }
 .payment-pay-btn:hover {
 	background: #ffffff;
-    color: #d6c3a7;
+	color: #d6c3a7;
 }
 
-/* Icon cart di kanan tombol */
 .payment-cart-icon {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-/* Payment section styling */
 .payment {
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 40px;
+	margin-top: 5vh;
 }
 
 .payment-header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 24px;
+	margin-bottom: 3vh;
 }
 
 .payment-arrow {
-	width: 220px;
+	width: 30vw;
 	height: auto;
-	margin-bottom: 8px;
+	margin-bottom: 1vh;
 }
 
 .payment-qr-box {
 	background: #fff;
-	border-radius: 18px;
-	box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-	padding: 18px 24px;
+	border-radius: 2vh;
+	box-shadow: 0 0.2vh 1.2vh rgba(0,0,0,0.08);
+	padding: 2vh 3vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .payment-qr {
-	width: 180px;
+	width: 20vh;
 	height: auto;
 	display: block;
 }

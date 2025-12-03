@@ -17,8 +17,8 @@ body {
 /* Layer 2: White transparent box with border */
 .background-box {
   position: absolute;
-  top: 9.8%;
-  left: 10%;
+  top: 9.8vh;
+  left: 10vw;
   width: 84vw;
   height: 78vh;
   background: rgba(0, 0, 0, 0);
@@ -44,7 +44,7 @@ body {
   position: absolute;
   left: 3vw;
   top: 14.5vh;
-  width: 600px;
+  width: 30vw;
   height: auto;
   z-index: 3;
 }

@@ -35,7 +35,6 @@
   height: 100vh;
   background: rgba(0,0,0,0.5);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 9999;
@@ -52,21 +51,21 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 24px;
-  margin-bottom: 24px;
+  gap: 3vw;
+  margin-bottom: 3vh;
 }
 
 .popup-box-left {
-  width: 220px;
-  height: 120px;
+  width: 22vw;
+  height: 12vh;
   background: #e2d3c0;
-  border-radius: 18px;
+  border-radius: 2vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  padding: 18px 18px 18px 22px;
+  padding: 2vh 2vw 2vh 2vw;
   position: relative;
+  font-size: 1.4vh;
 }
 
 .popup-cart-title {
@@ -103,14 +102,14 @@
 }
 
 .popup-btn {
-  width: 340px;
-  height: 60px;
+  width: 34vw;
+  height: 6vh;
   background: #7e775f;
-  border-radius: 18px;
+  border-radius: 2vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 1vh;
   position: relative;
 }
 
@@ -125,4 +124,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: max-content;
+}
+
+@media screen and (max-width: 500px) {
+  .popup-outer {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 8vh;
+  }
+  .popup-box-left {
+    width: 80vw;
+    height: auto;
+    padding: 3vw 4vw;
+    font-size: 2.5vw;
+  }
+  .popup-btn {
+    width: 80vw;
+    height: 7vh;
+    font-size: 2.5vh;
+  }
+  .popup-pay-text {
+    font-size: 2.5vh;
+  }
 }

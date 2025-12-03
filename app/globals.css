@@ -4,4 +4,32 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Force landscape orientation on mobile */
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  body::before {
+    content: "Please rotate your device to landscape mode.";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vh;
+    z-index: 9999;
+    text-align: center;
+  }
+  #__next, main, .app {
+    display: none !important;
+  }
 }

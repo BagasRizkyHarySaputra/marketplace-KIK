@@ -1,6 +1,6 @@
 import "../static/css/background.css";
 
-export default function Background() {
+export default function Background({ hideImage = false }) {
 	return (
 		<div className="background">
 			{/* Layer 2: Kotak transparan dengan border */}
@@ -8,7 +8,9 @@ export default function Background() {
 			{/* Layer 3: Sidebar putih */}
 			<div className="background-sidebar"></div>
 			{/* Layer 4: Gambar sopBuah.svg */}
-			<img src="/sopBuah.svg" alt="Sop Buah" className="background-image" />
+			{!hideImage && (
+				<img src="/sopBuah.svg" alt="Sop Buah" className="background-image" />
+			)}
 		</div>
 	);
 }

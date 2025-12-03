@@ -2,7 +2,7 @@
 /* Header container */
 .header {
 	width: 100vw;
-	height: 80px;
+	height: 10vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -16,26 +16,26 @@
 
 /* Logo di kiri */
 .header-logo {
-	height:84px;
+	height:10vh;
 	width: auto;
 }
 
 .header-left {
 	display: flex;
 	align-items: center;
-    padding-left: 4.2vh;
+		padding-left: 4.2vh;
 }
 
 /* Menu di kanan */
 .header-right {
 	display: flex;
 	align-items: center;
-	gap: 55px;
-    padding-right: 20vh;
+	gap: 6vw;
+		padding-right: 8vw;
     
 }
 .header-link {
-    font-family: 'Glacial Indifference', sans-serif;
+	font-size: 2.5vh;
 	font-size: 1.700rem;
 	color: #ffffff;
 	text-decoration: none;

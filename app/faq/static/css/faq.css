@@ -3,31 +3,31 @@
   position: relative;
   z-index: 30;
   padding-top: 15vh;
-  padding-left: 50vh;
+  padding-left: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .faq-list {
-  max-width: 600px;
+  max-width: 60vw;
   width: 100%;
   background: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  padding: 32px;
+  border-radius: 3vh;
+  box-shadow: 0 0.3vh 1.6vh rgba(0,0,0,0.08);
+  padding: 4vh 3vw;
 }
 
 .faq-question {
   font-family: 'Glacial Indifference', sans-serif;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2.5vh;
   color: #c0a279;
 }
 .faq-answer {
   font-family: 'Glacial Indifference', sans-serif;
-  margin-top: 8px;
+  margin-top: 1vh;
   color: #000000;
 }
 .faq-item {
-  margin-bottom: 24px;
+  margin-bottom: 3vh;
 }

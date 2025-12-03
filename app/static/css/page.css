@@ -9,78 +9,75 @@ body, html {
 .main-ingredients li {
   display: flex;
   align-items: center;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.7vh;
 }
 .main-ingredients .circle {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 1.5vh;
+  height: 1.5vh;
   border-radius: 50%;
   background: #fff;
-  margin-right: 12px;
+  margin-right: 2vw;
 }
+
 /* Main content box (putih, border, radius) */
 .main-content {
   top: 17vh;
-  left: 50vh;
+  left: 20vw;
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1vh;
   position: relative;
   z-index: 20;
 }
 
 .main-title {
   font-family: 'League Spartan', sans-serif;
-  font-size: 2.5rem;
+  font-size: 5vh;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 1rem;
+  margin-bottom: 2vh;
 }
 
 .main-ingredients {
   font-family: 'Glacial Indifference', sans-serif;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 2.5vh;
   color: #fff;
-  margin-bottom: 0rem;
+  margin-bottom: 0vh;
 }
 .main-ingredients ul {
-  margin-top: 0.5rem;
-  margin-left: 1.5rem;
-}
-.main-ingredients li {
-  margin-bottom: 0.3rem;
+  margin-top: 1vh;
+  margin-left: 2vw;
 }
 
 .main-desc {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 2vh;
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 2vh;
   text-align: justify;
 }
 
 .main-buy {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 4vh;
 }
 .main-buy-btn {
   background: #e5d3b3;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2vh;
   font-weight: bold;
   border: none;
-  border-radius: 30px;
-  padding: 1rem 3rem;
+  border-radius: 4vh;
+  padding: 1vh 3vw;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 0.2vh 0.8vh rgba(0,0,0,0.08);
   transition: background 0.3s;
 }
 .main-buy-btn:hover {
